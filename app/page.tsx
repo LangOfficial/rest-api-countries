@@ -20,10 +20,10 @@ export default async function Home() {
   return (
     <main>
       <div className="lg:flex items-center mt-10 justify-between mb-6 space-y-6 lg:space-y-0">
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<div className="skeleton h-6 w-96"></div>}>
           <Search />
         </Suspense>
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<div className="skeleton h-6 w-48"></div>}>
           <CountryFilter />
         </Suspense>
       </div>
